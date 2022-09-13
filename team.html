@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">    
+    <title>Document</title>
+</head>
+<body>
+ 
+    <!-- ---------------------------------------------- -->
+    <!-- <header> -->
+        <nav>
+            <div class="wrapper">
+
+                <div class="logo"><a href="#">Stanley Jaxen+ </a></div>
+
+                <ul class="navLinks">
+                    
+                    <li ><a href="index.html">Home</a></li>
+                    <li ><a href="team.html">The Team!</a></li>
+                    <li ><a href="#">Widgets</a>
+                        <ul class="dropMenu">
+                            <li><a href="#">population </a></li>
+                            <li><a href="#">without </a></li>
+                            <li><a href="#">unionized </a></li>
+                            <li><a href="#">brief </a></li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="#">Mega Menu</a>
+                        <div class="megaBox">
+                            <div class="content">
+                                <div class="row">
+                                    <img src="images\product.jpg" alt="Tile tracker device">
+                                </div>
+                                <div class="row">
+                                    <header>Design Services</header>
+                                    <ul class="megaLinks">
+                                        <li><a href="#">Graphics</a></li>
+                                        <li><a href="#">Vectors</a></li>
+                                        <li><a href="#">Business cards</a></li>
+                                        <li><a href="#">Custom logo</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Email Services</header>
+                                    <ul class="megaLinks">
+                                        <li><a href="#">Email Services</a></li>
+                                        <li><a href="#">Personal Email</a></li>
+                                        <li><a href="#">Business Email</a></li>
+                                        <li><a href="#">Mobile Email</a></li>
+                                        <li><a href="#">Web Marketing</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <header>Security Services</header>
+                                    <ul class="megaLinks">
+                                        <li><a href="#">Site Seal</a></li>
+                                        <li><a href="#">VPS Hosting</a></li>
+                                        <li><a href="#">Private Seal</a></li>
+                                        <li><a href="#">Website Design</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li ><a href="#">Random</a></li>
+                    <li ><button onclick="location.href='https://google.com';" class="buttonPrimary">Contact</button></li>
+                </ul>
+            </div >
+        </nav>
+    <!-- CARDS -->
+
+    <section class="cardSection">
+        <div id="cardContainer">
+            <div id="hello"></div>
+            <script>
+
+                var arr = [
+                    { firstName: 'Jane', lastName:'Yu', position:'A2B Planner', description: 'in from agreeable. He a and blind organization the their other in of without lobby, ideas deference'},
+                    { firstName: 'Adam', lastName:'Thompson', position:'Chief Geologist', description: 'thoughts overhauls to of right I cold forest pink allowed long surprise instruments'},
+                    { firstName: 'Erin', lastName:'McAlister', position:'Health and Safety', description: 'the own, took brief state me. The put phase city who isnt attached the his led and college into'},
+                    { firstName: 'Scott', lastName:'Johnson', position:'A2B Planner', description: 'ailing. Warned explorations and the so hearts success problems a and volume cut endeavours, but'},
+                    { firstName: 'Abeba', lastName:'Imani', position:'Salesforce', description: 'offer, you with on what like and be person, enormity, and the to mountains, this'},
+                    { firstName: 'Zoe', lastName:'Brown', position:'Accounts Payable', description: 'He a and blind organization the their other in of without lobb organization the their'},
+                    { firstName: 'Rebecca', lastName:'Stilson', position:'Chief Financial Officer', description: 'own, took brief state me. The put phainstruments, travelling it who isnt attached the'},
+                    { firstName: 'Adam', lastName:'Jeong', position:'IT Infrastructure', description: 'He a and blind organization the their other in of without lobby, ideas deference'},
+                    { firstName: 'Jian', lastName:'Wang', position:'Finance Officer', description: 'abused for the instruments, travelling it movement stiff of easier twice helped begin fitted'},
+                    { firstName: 'Zselyke ', lastName:'Vajda', position:'Marketing', description: 'seemed the checkin invitation gods, long pretty the his I designer prope'},     
+                ];
+                //const collection = document.getElementsByClassName("cardContainer");
+
+                const cardData = document.getElementById("cardContainer");
+                //CardData.innerHTML = "<h1>New Text</h1>";
+
+                    for (let i = 0; i < 10; i++) {
+                        cardData.innerHTML = cardData.innerHTML + "<div class=\"card\"><img src=\"images\\" + i + ".jpg\" >" + "<h1>" + arr[i].firstName + " " + arr[i].lastName +"</h1>" + "<h2>" + arr[i].position + "</h2>" + "<p>" + arr[i].description + "</p></div>";
+                    }
+                    
+            </script>
+
+        </div>
+    </section>
+
+
+</body>
+</html>
