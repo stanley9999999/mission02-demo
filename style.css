@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+
+
+/* --------------------- NAVBAR ------------------------------------ */
+nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    height: 65px;
+    line-height: 65px;
+
+    background: #242526;
+}
+
+nav .wrapper {     
+    position: relative;
+    max-width: 1200px;
+    padding 0 30px;
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper .logo a {
+    color: #43a7dd;
+    text-decoration: none;
+    font-size:  20px;
+    font-weight: 600;
+}
+.buttonPrimary {
+    background-color: #43a7dd;
+    font-size:  16px;
+    font-weight: 600;
+    padding: 9px 15px;
+    border-radius: 30px 30px 30px 30px; 
+}
+.buttonPrimary:hover {
+    background-color: #fff;
+    font-size:  16px;
+    font-weight: 600;
+    padding: 9px 15px;
+    border-radius: 30px 30px 30px 30px; 
+}
+
+.wrapper .navLinks {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navLinks li a:hover {
+    background: #3A3B3C;
+}
+
+/* ------------------Dropdown---------------------- */
+.navLinks .dropMenu {
+    background: #242526;
+    width: 180px;
+    top: 85px;
+    line-height: 45px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navLinks li:hover .dropMenu, .navLinks li:hover .megaBox {
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4 ease;
+}
+
+.dropMenu li a {
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 0px;
+}
+
+/* -------------------MegaMenu----------------- */
+
+.megaBox {
+    position: absolute;
+    top: 65px; /* 85px animated*/
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.megaBox .content {
+    background: #242526;
+    padding: 25px 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content .row {
+    width: calc(25% - 10px);
+    line-height: 25px;
+}
+
+.content .row img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content .row header {
+    color: #f2f2f2;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content .row .megaLinks {
+    margin-left: -15px;
+    border-left: 1px solid rgba(255,255,255, 0.09);
+}
+
+.content .row:nth-child(1), .content .row:nth-child(2) {
+    border-left: 0px;
+
+}
+
+/* .row .megaLinks .li a {    
+    padding: 0 20px;
+    color: #D9D9D9;
+    font-size: 2em;
+    display: block;
+} */
+
+.megaLinks a {    
+    padding: 0 1px;
+    color: #D9D9D9;
+    font-size: 17px;
+    display: block;
+}
+
+.row .megaLinks .li a:hover {
+    color: #f2f2f2;
+    width: 100%;
+}
+
+/* --------------------------------- cards -------------------------------------------- */
+
+
+
+
+.cardSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+}
+#cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1200px;
+
+}
+
+.card {
+    padding:10px;
+    flex: 0 1 24%;
+}
+
+#sale {
+    position: relative;
+    top: -400px;
+    left: 1100px;
+    width: 200px;
+    height: 100px;
+    /* border: 3px solid red; */
+    border-top: 10px solid gray;
+}
+
+
+#saleCardContainer {
+    display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    left: 225px;
+    top: 50px;
+    max-width: 1200px;
+
+}
